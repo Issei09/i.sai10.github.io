@@ -1,6 +1,6 @@
 title: Issei Saito
-logo: /assets/img/selfphoto.jpg
-description: neuroscience & math undergrad senior
+logo: /asset/img/img.jpg
+description: ohhhhhh & yayyyyy
 show_downloads: false
 # remote_theme: chrisrhymes/bulma-clean-theme
 # remote_theme: pages-themes/minimal@v0.2.0
@@ -8,4 +8,4 @@ show_downloads: false
 # - jekyll-remote-theme # add this line to the plugins list if you already have one
 
 theme: jekyll-theme-minimal
-favicon: /assets/img/favicon.png
+# favicon: /assets/img/favicon.png
