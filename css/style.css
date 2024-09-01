@@ -309,5 +309,10 @@ h5{
 .a_news {
 	margin: 0;
 }
-
+@media only screen and (max-width: 600px) {
+    .main_title {
+        font-size: 1.8rem; /* スマホ向けにフォントサイズを調整 */
+        top: 0.8cm; /* スマホ向けに上からの位置を調整 */
+    }
+}
 /* } */
