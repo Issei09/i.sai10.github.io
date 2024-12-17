@@ -1,0 +1,246 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{graphicx}
+
+% ページ設定
+\geometry{top=20mm, left=20mm, right=20mm, bottom=20mm}
+
+% セクションタイトルの設定
+\titleformat{\section}
+{\normalfont\large\bfseries}{\thesection}{1em}{}
+
+\begin{document}
+
+% 名前と連絡先を中央に配置
+\begin{center}
+    \textbf{\LARGE 齋藤 一誠 (Issei Saito)} \\
+    s2332042@edu.cc.uec.ac.jp
+\end{center}
+
+% 線を太く（1.5pt）に変更
+\noindent\rule{\textwidth}{1.5pt}
+
+% 研究概要
+\noindent
+\begin{minipage}[t]{0.3\textwidth}
+    \textbf{研究概要}
+\end{minipage}%
+\begin{minipage}[t]{0.7\textwidth}
+確率的生成モデルを用いて世界の現象をモデル化し、創発コミュニケーション（EC: 言語や記号がエージェント間で自発的に発生する現象）のプロセスを解明する研究を行っている。また、産業界との共同研究を通じて、確率モデルを活用した作業者行動解析システムの開発にも取り組んでいる。
+\end{minipage}
+
+\vspace{10pt}
+
+% 学歴
+\noindent
+\begin{minipage}[t]{0.3\textwidth}
+    \textbf{学歴}
+\end{minipage}%
+\begin{minipage}[t]{0.7\textwidth}
+    電気通信大学大学院 機械知能システム学専攻 修士課程 \hfill 2023年4月 - 在学中 \newline
+    指導教員: 中村 友昭 教授 \newline\\
+    電気通信大学 情報理工学域 II類（先端ロボティクスプログラム）学士課程 \hfill 2019年4月 - 2023年3月 \newline
+    指導教員: 中村 友昭 教授
+\end{minipage}
+
+\vspace{10pt}
+
+% 研究経験
+\noindent
+\begin{minipage}[t]{0.3\textwidth}
+    \textbf{研究経験}
+\end{minipage}%
+\begin{minipage}[t]{0.7\textwidth}
+
+     \textbf{三菱電機先端技術総合研究所との共同研究（研究員）} \hfill 2022年8月 - 現在 
+\begin{itemize}
+     \item 教師なし分節化手法を用いた効率的な作業分析システムの開発 
+     \item 手作業で行われていた作業分析を自動化し，生産性向上を目指す 
+     \item 労働者の行動を自動で分節化し、反復作業中の変化把握を容易にする
+     \item セグメンテーションモデルの改良・実装を担当\newline
+\end{itemize}
+
+     \textbf{SUNY Binghamton(ニューヨーク州立大学) 客員研究員} \hfill 2023年9月 - 2024年6月 
+\begin{itemize}
+    \item Shiqi Zhang 教授の指導のもと、AIRグループにて研究
+    \item 創発コミュニケーション（EC）に関する研究
+    \item エージェント間で自発的に形成されるシンボル（言語）の生成過程を確率的生成モデルでモデル化
+    \item 人間が連続的な音声信号を生成・認識する過程のモデル
+    \item モデル構築時に自然言語処理でも扱われるトピックモデルの1つであるLDAをマルチモーダルに拡張したモデルMLDAを用いた。テキストと画像データの相関性をモデル化し、データから潜在的なトピックを発見 
+    - この手法は、ブログのテキストデータやメタ情報の解析にも応用可能であると考える
+\end{itemize}
+\end{minipage}
+
+\vspace{10pt}
+
+% 職務経験
+\noindent
+\begin{minipage}[t]{0.3\textwidth}
+    \textbf{職務経験1}
+\end{minipage}%
+\begin{minipage}[t]{0.7\textwidth}
+     \textbf{Avanti R\&D, Inc. （業務委託）} \hfill 2024年6月 - 2024年12月
+    \begin{itemize}
+	    \item NDAにより詳細は公開不可
+	    \item Pythonによるデータ解析ツール開発  
+	    \item 最新の英語論文を読み、実装 
+	    \item プロジェクトを計画から実行までマネジメント
+	    \item 英語でのコミュニケーションを通じてプロジェクトを推進  \newline
+　\end{itemize}
+
+     \textbf{研究室でのアルバイト（チームで開発）}　\hfill 2024年6月 - 現在 
+　\begin{itemize}
+	    \item Difyを活用し、RAG（Retrieval-Augmented Generation）技術を用いたチャットボットシステムを構築  
+	    \begin{itemize}
+	    \item 非構造化データ（FAQ、Slack、業務マニュアル）を対象に効率的な検索と応答生成を実現  
+	    \item 検索インデックス構築（FAISS, BM25）  
+	    \item GPTベースの生成モデル統合および応答精度の改善  
+	    \item データ前処理（トークン化、正規化、重複削除）  
+	    \end{itemize}
+　
+	    \item ランダムフォレストを用いたゴルフ場推薦システムを構築  
+	    \begin{itemize}
+	    \item ユーザー属性データ（年齢、スキル、プレイ頻度）とゴルフ場データ（アクセス、混雑状況）を基に推薦モデルを開発  
+	    \item データ前処理: 欠損値処理、特徴量エンジニアリング  
+	    \item 機械学習: ランダムフォレストモデルの学習と評価（Scikit-learnを使用）  
+	    \item 可視化: 推薦結果をMatplotlibで可視化し、評価指標（Precision, Recall）を算出  
+	    \end{itemize}
+\end{itemize}
+\end{minipage}
+
+\noindent
+\begin{minipage}[t]{0.3\textwidth}
+    \textbf{職務経験2}
+\end{minipage}%
+\begin{minipage}[t]{0.7\textwidth}
+    \textbf{電気通信大学 ティーチングアシスタント} \hfill 2022年4月 - 2022年9月
+      \begin{itemize}
+    \item 松木 利憲 教授担当「キャリア教育」において学部生をサポート \newline
+      \end{itemize}
+    
+    \textbf{ 独立行政法人日本学術振興会（JSPS）特別研究員（DC1）}\hfill 2025年4月 - \newline
+    
+\end{minipage}
+
+\vspace{10pt}
+
+% 発表論文（国内）
+\noindent
+\begin{minipage}[t]{0.3\textwidth}
+    \textbf{発表論文 (国内学会)}
+\end{minipage}%
+\begin{minipage}[t]{0.7\textwidth}
+    1. Issei Saito, Tomoaki Nakamura, Toshiyuki Hatta, Wataru Fujita, Shintaro Watanabe, Shotaro Miwa.  
+       「Viterbiアルゴリズムを用いた3次元骨格位置推定の高精度化」  
+       第55回情報処理学会全国大会, 2023年3月 \newline
+
+    2. Issei Saito, Tomoaki Nakamura, Toshiyuki Hatta, Wataru Fujita, Shintaro Watanabe, Shotaro Miwa.  
+       「GP-HSMMに基づく二重分節解析による作業行動の解析」  
+       人工知能学会全国大会, 2023年6月
+\end{minipage}
+
+\vspace{10pt}
+
+% 発表論文（国際）
+\noindent
+\begin{minipage}[t]{0.3\textwidth}
+    \textbf{発表論文 (国際学会)}
+\end{minipage}%
+\begin{minipage}[t]{0.7\textwidth}
+    3. Issei Saito, Tomoaki Nakamura, Toshiyuki Hatta, Wataru Fujita, Shintaro Watanabe, Shotaro Miwa.  
+       「Unsupervised Work Behavior Analysis Using Hierarchical Probabilistic Segmentation」  
+       The 49th Annual Conference of the IEEE Industrial Electronics Society (IECON), 2023年10月 \newline
+       
+    4. Issei Saito, Tomoaki Nakamura, Akira Taniguchi, Tadahiro Taniguchi, Yohei Hayamizu, Shiqi Zhang. 
+    「Emergence of Continuous Signal as Shared Symbols Through Emergent Communication」  
+       The IEEE International Conference on Development and Learning (ICDL), 2024年5月（口頭発表に選出）
+\end{minipage}
+
+\vspace{10pt}
+
+% プレプリント
+\noindent
+\begin{minipage}[t]{0.3\textwidth}
+    \textbf{Preprint}
+\end{minipage}%
+\begin{minipage}[t]{0.7\textwidth}
+    5. Issei Saito, Tomoaki Nakamura, Toshiyuki Hatta, Wataru Fujita, Shintaro Watanabe, Shotaro Miwa.  
+       「Unsupervised Work Behavior Pattern Extraction Based on Hierarchical Probabilistic Model」  
+       arXiv:2405.09838
+\end{minipage}
+
+\vspace{10pt}
+
+\noindent
+\begin{minipage}[t]{0.3\textwidth}
+    \textbf{Committee}
+\end{minipage}%
+\begin{minipage}[t]{0.7\textwidth}
+言語処理学会第31回年次大会 (NLP2025) テーマセッション『言語とコミュニケーションの創発』 \textbf{オーガナイザ}, Mar 2025. https://anlp.jp/nlp2025/
+\end{minipage}
+
+\vspace{10pt}
+% スキル
+\noindent
+\begin{minipage}[t]{0.3\textwidth}
+    \textbf{Skill}
+\end{minipage}%
+\begin{minipage}[t]{0.7\textwidth}
+ \begin{itemize}
+    \item \textbf{自然言語処理（NLP）}  
+    \begin{itemize}
+        \item RAG（Retrieval-Augmented Generation）を用いたテキスト検索・生成  
+        \item 検索インデックス構築: FAISS, BM25  
+        \item GPTモデルを活用したテキスト生成と要約  
+        \item 基礎知識
+    \end{itemize}
+
+    \item \textbf{機械学習・データ解析}  
+    \begin{itemize}
+        \item 様々なシステムの開発 、実装
+        \item 特徴量抽出およびデータ前処理（欠損値処理、正規化）  
+    \end{itemize}
+
+    \item \textbf{プログラミング}  
+    \begin{itemize}
+        \item Python: Pandas, Scikit-learn, Matplotlib  
+        \item バージョン管理: Git  
+    \end{itemize}
+\item \textbf{研究開発}  
+    \begin{itemize}
+        \item 英語論文の調査と実装  
+        \item 国際会議での発表
+    \end{itemize}
+    
+    \item \textbf{その他}  
+    \begin{itemize}
+        \item 英語力: IELTS 6.0（2023年1月）  
+    \end{itemize}
+\end{itemize}
+\end{minipage}
+
+\vspace{10pt}
+
+% その他
+\noindent
+\begin{minipage}[t]{0.3\textwidth}
+    \textbf{その他}
+\end{minipage}%
+\begin{minipage}[t]{0.7\textwidth}
+     \textbf{アメリカンフットボール部 オフェンスリーダー兼副将 (2021,2022年)}\newline
+    - チーム目標達成のためのリーダーシップ \newline
+    - コミュニケーション能力・責任感 \newline
+    - 不撓不屈の精神\newline
+    - 創部史上初の3部リーグ優勝、二部リーグ勝利に貢献 \newline
+
+     \textbf{アメリカンフットボール部 オフェンスコーチ(2023年)} \newline
+    - チームマネジメント\newline
+    - 様々な世代の方とのコミュニケーション\newline
+    - 的確なフィードバックによる選手育成\newline
+\end{minipage}
+
+\end{document}
